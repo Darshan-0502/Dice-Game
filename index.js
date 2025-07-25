@@ -1,3 +1,6 @@
+var start = true;
+function startGame(){
+while(start==true){
 var randomNumber1 = Math.floor(Math.random()*6)+1
 // for (let i = 1; i < (randomNumber1+1); i++) {
     document.querySelector('.img1').setAttribute("src","./images/dice"+randomNumber1+".png" )
@@ -19,3 +22,10 @@ else{
     document.querySelector('h1').innerHTML = "Draw!"
     
 }
+start=false}}
+
+document.querySelector('.a').addEventListener('click',function(){
+    start=true;
+    startGame();
+    document.querySelector('.a').innerHTML = 'Refresh'
+})
