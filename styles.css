@@ -39,10 +39,24 @@ footer {
 }
 
 .refresh {
-  font-size: 3rem;
-  width: 100%;
-  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  height: 70px;
 }
-.refresh > a {
-  color: white;
+.refresh > .a {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  color: black;
+  text-decoration: solid;
+  cursor: pointer;
+  width: 200px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.refresh > .a:hover{
+  background-color: lightgray;
 }
